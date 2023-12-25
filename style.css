@@ -9,26 +9,62 @@ body {
     max-width: 1000px;
 }
 
-#home {
+.home {
     max-width: 1000px;
-    display: flex;
-}
-#homenav {
-    float: left;
-    text-align: right;
-    max-width: 25%;
-    margin-right: 10px;
-    font-size: 1.28em;
 }
 
 #homeimage {
-    max-height: 700px;
-    max-width: 700px;
+    max-height: 500px;
+    max-width: 500px;
+    min-height: 300px;
+    min-width: 300px;
     width: 75%;
     height: auto;
 }
 
-#navlist li {
-    padding: 8px;
-    list-style-type: none;
+
+@media (min-width: 750px) {
+    
+    .desktop-homenav {
+        display: block;
+        float: left;
+        text-align: right;
+        max-width: 25%;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+
+    .desktop-homenav ul.navlist li{
+        margin-top: 10px;
+        list-style-type: none;
+        font-size: 20px;
+    }
+
+    .mobile-homenav {
+        display: none;
+        text-align: right;
+        max-width: 25%;
+        margin-right: 10px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 749px) {
+    .desktop-homenav {
+        display: none;
+        text-align: left;
+        max-width: 25%;
+        margin-right: 10px;
+        font-size: 1.28em;
+    }
+    .mobile-homenav {
+        display: block;
+        text-align: left;
+    }
+    .mobile-homenav div.mobilenav {
+        float:left;
+        text-align: left;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 }
