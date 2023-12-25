@@ -9,6 +9,10 @@ body {
     max-width: 1000px;
 }
 
+footer {
+    font-size: 10px;
+}
+
 .home {
     max-width: 1000px;
 }
@@ -16,12 +20,22 @@ body {
 #homeimage {
     max-height: 500px;
     max-width: 500px;
-    min-height: 300px;
-    min-width: 300px;
+    min-height: 400px;
+    min-width: 400px;
     width: 75%;
     height: auto;
 }
 
+a:link {
+    color:orange;
+    text-decoration: none;
+}
+a:hover {
+    color:blue;
+    text-decoration: none;
+}
+
+/*This is how I'm changing the page when the screen size is different*/
 
 @media (min-width: 750px) {
     
@@ -29,7 +43,7 @@ body {
         display: block;
         float: left;
         text-align: right;
-        max-width: 25%;
+        max-width: 150px;
         margin-right: 10px;
         font-size: 1em;
     }
@@ -60,11 +74,13 @@ body {
     .mobile-homenav {
         display: block;
         text-align: left;
+        font-size: 1em;
     }
     .mobile-homenav div.mobilenav {
         float:left;
         text-align: left;
         font-size: 18px;
         margin-bottom: 10px;
+        white-space: nowrap;
     }
 }
