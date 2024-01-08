@@ -85,7 +85,7 @@ a:hover {
     }
 }
 
-/*.gallery{
+.gallery{
     max-width: 749px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -100,4 +100,4 @@ a:hover {
     min-width: 400px;
     width: 75%;
     height: auto;
-}*/
+}
