@@ -84,3 +84,20 @@ a:hover {
         white-space: nowrap;
     }
 }
+
+.gallery{
+    max-width: 749px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 15px;
+}
+
+.portfolio-img{
+    max-height: 500px;
+    max-width: 500px;
+    min-height: 400px;
+    min-width: 400px;
+    width: 75%;
+    height: auto;
+}
