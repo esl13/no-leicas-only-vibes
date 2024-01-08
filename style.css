@@ -54,7 +54,7 @@ a:hover {
         font-size: 20px;
     }
 
-    .mobile-homenav {
+    .mobile-home {
         display: none;
         text-align: right;
         max-width: 25%;
@@ -71,16 +71,33 @@ a:hover {
         margin-right: 10px;
         font-size: 1.28em;
     }
-    .mobile-homenav {
+    .mobile-home {
         display: block;
         text-align: left;
         font-size: 1em;
     }
-    .mobile-homenav div.mobilenav {
-        float:left;
+    .mobile-home div.mobilenav {
+        float:block;
         text-align: left;
         font-size: 18px;
         margin-bottom: 10px;
         white-space: nowrap;
     }
 }
+
+/*.gallery{
+    max-width: 749px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 15px;
+}
+
+.portfolio-img{
+    max-height: 500px;
+    max-width: 500px;
+    min-height: 400px;
+    min-width: 400px;
+    width: 75%;
+    height: auto;
+}*/
