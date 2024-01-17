@@ -33,11 +33,7 @@ footer {
 }
 
 #homeimage {
-    max-height: 500px;
-    max-width: 500px;
-    min-height: 400px;
-    min-width: 400px;
-    width: 75%;
+    width: clamp(275px,50%,500px);
     height: auto;
 }
 
