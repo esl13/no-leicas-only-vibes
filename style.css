@@ -51,7 +51,7 @@ a:hover {
     .desktop-homenav ul.navlist li{
         margin-top: 10px;
         list-style-type: none;
-        font-size: 20px;
+        font-size: 1rem;
     }
 
     .mobile-home {
@@ -61,6 +61,7 @@ a:hover {
         margin-right: 10px;
         font-size: 1em;
     }
+
 }
 
 @media (max-width: 749px) {
@@ -79,25 +80,21 @@ a:hover {
     .mobile-home div.mobilenav {
         float:block;
         text-align: left;
-        font-size: 18px;
+        font-size: 1rem;
         margin-bottom: 10px;
         white-space: nowrap;
     }
 }
 
 .gallery{
-    max-width: 749px;
+    max-width: 1000px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit,20rem);
+    grid-gap: 10px;
+    place-items: center;
 }
 
 .portfolio-img{
-    max-height: 500px;
-    max-width: 500px;
-    min-height: 400px;
-    min-width: 400px;
-    width: 75%;
-    height: auto;
+    width: clamp(300px,50%,500px);
+    aspect-ratio: 1/1;
 }
