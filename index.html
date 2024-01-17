@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <title>Eli's Website</title>
+    <title>Eli's Slice of the Internet</title>
 </head>
 
-<div class="home">
+<body class="home">
     <div class="desktop-homenav">
         <header>
             <h1>Eli Lavarias</h1>
@@ -29,20 +29,17 @@
             <h1>Eli Lavarias</h1>
         </header>
         <div class="mobilenav">
-                <!--<li><a href="index.html">Home</a></li>-->
-                <a href="photography.html">Photo Stuff</a> || 
-                <a href="dataProjects.html">Data Stuff</a> || 
-                <a href="myFriends.html">Cool People</a>||
-                <a href="">Fun Stuff</a> || 
-                <a href="">About Me</a>
+            <ul class="nav">
+                <li><a href="photography.html">Photo Stuff </a></li>
+                <li><a href="dataProjects.html">Data Stuff </a></li>
+                <li><a href="myFriends.html">Cool People </a></li>
+                <li><a href="">About Me </a></li>
+            </ul>
         </div>
     </div>
     <div>
-        <img src="images\86330007.JPG" alt="It me" id="homeimage">
+        <img id="homeimage" alt = "Uh Oh! You should see something here!">
     </div>
-</div>
-
-<body>
     <p>I heard one too many SquareSpace ads and decided to make my own website from scratch out of spite. </p>
 </body>
 
@@ -50,4 +47,15 @@
     <p>This website was made from scratch by me. I hope you liked it!</p>
 </footer>
 
+<script>
+    const basePath = 'images/home-images/'
+    const srcImages = ['67580002-1.JPG','67580003-1.JPG','86320001.JPG','86320010.JPG','86330007.JPG','Color 1-2.jpg'];
+
+    randHomeImage();
+    
+    function randHomeImage(){
+        const randNum = Math.floor(Math.random()*srcImages.length);
+        document.getElementById('homeimage').src = basePath + srcImages[randNum];
+    }
+</script>
 </html>

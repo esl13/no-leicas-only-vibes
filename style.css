@@ -17,6 +17,21 @@ footer {
     max-width: 1000px;
 }
 
+.nav {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin: 10px 0;
+    padding-left: 0px;
+}
+
+.nav li{
+    margin: 0 10px 0 0 ;
+    border-bottom: 2px solid blue;
+}
+
 #homeimage {
     max-height: 500px;
     max-width: 500px;
@@ -31,7 +46,8 @@ a:link {
     text-decoration: none;
 }
 a:hover {
-    color:blue;
+    color:white;
+    background-color: blue;
     text-decoration: none;
 }
 
