@@ -9,13 +9,15 @@
 </head>
 
 
-<nav>
-    <h1><a href="index.html">Eli Lavarias</a></h1>
-    <ul class="nav">
-        <li><a href="photography.html">Photo Stuff </a></li>
-        <li><a href="dataProjects.html">Data Stuff </a></li>
-        <li><a href="myFriends.html">Cool People </a></li>
-        <li><a href="aboutMe.html">About Me </a></li>
+<nav class="navhead">
+    <div class = "navtitle">
+        <h1><a href="/index.html">Eli Lavarias</a></h1>
+    </div>
+    <ul class="navbar">
+        <li><a href="/photography.html">Photo Stuff </a></li>
+        <li><a href="/dataProjects.html">Data Stuff </a></li>
+        <li><a href="/myFriends.html">Cool People </a></li>
+        <li><a href="/aboutMe.html">About Me </a></li>
     </ul>
 </nav>
 
@@ -23,22 +25,25 @@
     <div>
         <img id="homeimage" alt = "Uh Oh! You should see something here!">
     </div>
-    <p>I heard one too many SquareSpace ads and decided to make my own website from scratch out of spite. </p>
+    <p>
+        I heard one too many SquareSpace ads and decided to make my own website from scratch out of spite.
+    </p>
 </body>
 
-<footer>
-    <p>This website was made from scratch by me. I hope you liked it!</p>
-</footer>
-
 <script>
-    const basePath = 'images/home-images/'
-    const srcImages = ['67580002-1.JPG','67580003-1.JPG','86320001.JPG','86320010.JPG','86330007.JPG','Color 1-2.jpg'];
+    const basePath = '/images/home-images/'
+    const srcImages = ['https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140959&authkey=%21AKYwpV0xbZvxLFc&width=4832&height=4760',
+    'https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140956&authkey=%21AKlsZku5aUbkSPU&width=2079&height=2048',
+    'https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140957&authkey=%21APtrAEc_bf2V3Vs&width=2079&height=2048',
+    'https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140958&authkey=%21AGjQ9hwuFtC39DI&width=2079&height=2048',
+    'https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140954&authkey=%21AGY4_pcPB8-F-VY&width=1708&height=1683',
+    'https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140955&authkey=%21AA7D-d9HYXzO8-8&width=1790&height=1790'];
 
     randHomeImage();
     
     function randHomeImage(){
         const randNum = Math.floor(Math.random()*srcImages.length);
-        document.getElementById('homeimage').src = basePath + srcImages[randNum];
+        document.getElementById('homeimage').src = srcImages[randNum];
     }
 </script>
 </html>
