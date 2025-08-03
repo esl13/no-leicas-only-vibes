@@ -31,19 +31,21 @@
 </body>
 
 <script>
-    const basePath = '/images/home-images/'
-    const srcImages = ['https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140959&authkey=%21AKYwpV0xbZvxLFc&width=4832&height=4760',
-    'https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140956&authkey=%21AKlsZku5aUbkSPU&width=2079&height=2048',
-    'https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140957&authkey=%21APtrAEc_bf2V3Vs&width=2079&height=2048',
-    'https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140958&authkey=%21AGjQ9hwuFtC39DI&width=2079&height=2048',
-    'https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140954&authkey=%21AGY4_pcPB8-F-VY&width=1708&height=1683',
-    'https://onedrive.live.com/embed?resid=AD7AA90D9B6C9454%2140955&authkey=%21AA7D-d9HYXzO8-8&width=1790&height=1790'];
+    const basePath = '/images/homepage/'
+    const srcImages = ['dc-naruto-run-washington-monument.JPG',
+    'dc-union-station-2023.JPG',
+    'hakone-turnpike.JPG',
+    'kamakura-on-the-hill.JPG',
+    'ormond-beach-morning-2023.jpg',
+    'shibuya-crossing-night.jpg',
+    'shinjuku-nights.jpg'
+    ];
 
     randHomeImage();
     
     function randHomeImage(){
         const randNum = Math.floor(Math.random()*srcImages.length);
-        document.getElementById('homeimage').src = srcImages[randNum];
+        document.getElementById('homeimage').src = basePath + srcImages[randNum];
     }
 </script>
 </html>
